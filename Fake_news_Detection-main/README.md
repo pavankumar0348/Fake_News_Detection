@@ -30,11 +30,29 @@ pip install -r requirments.txt
 ---
 All of the Dataset that used in this project are availabe in public Domain.Most of the Dataset are collected from Kaggle (https://www.kaggle.com/)
 different datsets contain  different column and different information like [title,text,subject,news_url,author]
-* _sample view of Dataset1_![Dataset1](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/dt1.PNG)
-* _sample view of Dataset2_![Dataset2](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/dt2.PNG)
-* _sample view of Dataset3_![Dataset3](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/dt3.PNG)
-* _sample view of Dataset4_![Dataset4](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/dt4.PNG)
-* _sample view of Dataset5_![Dataset5](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/dt5.PNG)
+### Sample View of Dataset 1  
+**Created By: Pavan Kumar M R**  
+![Dataset1](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt1.PNG)
+
+
+### Sample View of Dataset 2  
+**Created By: Pavan Kumar M R**  
+![Dataset2](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt2.PNG)
+
+
+### Sample View of Dataset 3  
+**Created By: Pavan Kumar M R**  
+![Dataset3](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt3.PNG)
+
+
+### Sample View of Dataset 4  
+**Created By: Pavan Kumar M R**  
+![Dataset4](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt4.PNG)
+
+
+### Sample View of Dataset 5  
+**Created By: Pavan Kumar M R**  
+![Dataset5](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt5.PNG)
 
 For model Build need only text and Label,The final dataset will contain only 2 column ['Article','Lable']
   * For text we will create a news column named 'Article' which is the Combination Header and text
