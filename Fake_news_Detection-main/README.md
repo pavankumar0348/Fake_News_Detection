@@ -30,6 +30,7 @@ pip install -r requirments.txt
 ---
 All of the Dataset that used in this project are availabe in public Domain.Most of the Dataset are collected from Kaggle (https://www.kaggle.com/)
 different datsets contain  different column and different information like [title,text,subject,news_url,author]
+<<<<<<< HEAD
 ### Sample View of Dataset 1  
 **Created By: Pavan Kumar M R**  
 ![Dataset1](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt1.PNG)
@@ -53,6 +54,13 @@ different datsets contain  different column and different information like [titl
 ### Sample View of Dataset 5  
 **Created By: Pavan Kumar M R**  
 ![Dataset5](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt5.PNG)
+=======
+* _sample view of Dataset1_![Dataset1](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt1.PNG)
+* _sample view of Dataset2_![Dataset2](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt2.PNG)
+* _sample view of Dataset3_![Dataset3](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt3.PNG)
+* _sample view of Dataset4_![Dataset4](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt4.PNG)
+* _sample view of Dataset5_![Dataset5](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt5.PNG)
+>>>>>>> b93159e (Add dataset images with Pavankumar0348)
 
 For model Build need only text and Label,The final dataset will contain only 2 column ['Article','Lable']
   * For text we will create a news column named 'Article' which is the Combination Header and text
@@ -71,27 +79,26 @@ For model Build need only text and Label,The final dataset will contain only 2 c
 ---
 Here we have build all the classifiers for predicting the fake news detection. The extracted features are fed into different classifiers. We have used Logistic Regression,  Stochastic gradient descent,Random forest, GBC, xgboost, DecisionTree, Multinomial Naive Baye and Bernoulli Naive Baye  classifiers . Each of the extracted features were used in all of the classifiers. Once fitting the model, we compared the accuracy score and checked the confusion matrix.
 
-![accuracy score](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/download%20(4).png)
+![accuracy score](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/download%20(4).png)
 
 _The highest accuracy score we are getting is 87.04 but don't worry the model was trained with 61,000+ recored it will perform well_
 Our finally selected and best performing classifier was Logistic Regression which was then saved on disk with name model.plk . Once you clone this repository, this model will be copied to your machine and will be used for prediction. It takes an news article as input from user then shown to user whether it is true or Fake.
 model.plk is used to deploy the model usinf Flask.
 
 #### Below is the Process Flow of the Model Building:
-![modelbuildingm](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/Modelbulding11.PNG)
+![modelbuildingm](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/Modelbulding11.PNG)
 
 
 ## **ML model Deployment**
 ---
 For Deploying we need to create a sample web interface which will get the text from the user and then send it to the flask server.In the flask server we will use the saved model model.plk to predict the news is real or fake and then return the result to the user through web interface.
  Example 1
-![result1](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/1.PNG)
+![result1](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/1.PNG)
  Example 2
-![result2](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/2.PNG)
+![result2](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/2.PNG)
 
 #### Below is the Process Flow of the Model Deployment:
-![model deployment](https://github.com/mohammed97ashraf/Fake_news_Detection/blob/main/dep.PNG)
-
+![model deployment](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dep.PNG)
 
 ## **Next steps**
 ---
@@ -101,7 +108,7 @@ As we can see that our best performing models had an 87.04 accuracy score. This 
 ---
 1. The first step would be to clone this repo in a folder in your local machine. To do that you need to run following command in command prompt or in git bash
 ```Language
-$ git clone  https://github.com/mohammed97ashraf/Fake_news_Detection.git
+$ git clone  https://github.com/pavankumar0348/Fake_news_Detection.git
 ```
 2.This will copy all the data source file, program files and model into your machine.
 
