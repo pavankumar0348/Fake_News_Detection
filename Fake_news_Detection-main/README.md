@@ -74,7 +74,6 @@ For Deploying we need to create a sample web interface which will get the text f
 #### Below is the Process Flow of the Model Deployment:
 ![model deployment](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dep.PNG)
 
-
 ## **Next steps**
 ---
 As we can see that our best performing models had an 87.04 accuracy score. This is due to the text are still containing stopwords and wordnet and for classification we used all the defult parameters and we didn't try the Deep Learning based classification.al thou 87.04 % accuracy with 61,000+ training dataset is not bad We will extend this project to implement these techniques in future to increase the accuracy and performance of our models.
@@ -100,3 +99,4 @@ $ python app.py
 7.Program will take user input text and will be used by model to classify in one of categories of "True" and "False". 
 
 8.Then the Flask server will return the result to your browser.
+
