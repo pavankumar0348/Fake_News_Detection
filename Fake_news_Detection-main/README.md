@@ -37,12 +37,12 @@ different datsets contain  different column and different information like [titl
 
 
 ### Sample View of Dataset 2  
-**Created By: Pavan Kumar M R**  
+  
 ![Dataset2](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt2.PNG)
 
 
 ### Sample View of Dataset 3  
-**Created By: Pavan Kumar M R**  
+
 ![Dataset3](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt3.PNG)
 
 
@@ -52,7 +52,7 @@ different datsets contain  different column and different information like [titl
 
 
 ### Sample View of Dataset 5  
-**Created By: Pavan Kumar M R**  
+  
 ![Dataset5](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt5.PNG)
 =======
 * _sample view of Dataset1_![Dataset1](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt1.PNG)
