@@ -79,26 +79,30 @@ For model Build need only text and Label,The final dataset will contain only 2 c
 ---
 Here we have build all the classifiers for predicting the fake news detection. The extracted features are fed into different classifiers. We have used Logistic Regression,  Stochastic gradient descent,Random forest, GBC, xgboost, DecisionTree, Multinomial Naive Baye and Bernoulli Naive Baye  classifiers . Each of the extracted features were used in all of the classifiers. Once fitting the model, we compared the accuracy score and checked the confusion matrix.
 
-![accuracy score](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/download%20(4).png)
+![accuracy score]![accuracy score](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/download%20(4).png)
 
 _The highest accuracy score we are getting is 87.04 but don't worry the model was trained with 61,000+ recored it will perform well_
 Our finally selected and best performing classifier was Logistic Regression which was then saved on disk with name model.plk . Once you clone this repository, this model will be copied to your machine and will be used for prediction. It takes an news article as input from user then shown to user whether it is true or Fake.
 model.plk is used to deploy the model usinf Flask.
 
 #### Below is the Process Flow of the Model Building:
-![modelbuildingm](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/Modelbulding11.PNG)
+![modelbuildingm]![modelbuildingm](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/Modelbulding11.PNG)
+
 
 
 ## **ML model Deployment**
 ---
 For Deploying we need to create a sample web interface which will get the text from the user and then send it to the flask server.In the flask server we will use the saved model model.plk to predict the news is real or fake and then return the result to the user through web interface.
  Example 1
-![result1](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/1.PNG)
- Example 2
-![result2](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/2.PNG)
+![result1](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/1.PNG)
+
+ Example 2 
+ ![result2](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/2.PNG)
+
 
 #### Below is the Process Flow of the Model Deployment:
-![model deployment](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dep.PNG)
+![model deployment]![model deployment](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/dep.PNG)
+
 
 ## **Next steps**
 ---
