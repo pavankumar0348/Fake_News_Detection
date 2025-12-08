@@ -1,133 +1,99 @@
-# Fake News Detection
-## **Overview**
+# 🚨 Fake News Detection
+
+[![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python&logoColor=white)](https://www.python.org/)  
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
+[![GitHub stars](https://img.shields.io/github/stars/pavankumar0348/Fake_News_Detection)](https://github.com/pavankumar0348/Fake_News_Detection/stargazers)
+
 ---
-The term fake news has become a buzz word these days.There was a time when if anyone needed any news, he or she would wait for the next-day newspaper. However, with the growth of online newspapers who update news almost instantly, people have found a better and faster way to be informed of the matter of his/her interest. Nowadays social-networking systems, online news portals, and other online media have become the main sources of news through which interesting and breaking news are shared at a rapid pace. However, many news portals serve special interest by feeding with distorted, partially correct, and sometimes imaginary news that is likely to attract the attention of a target group of people. Fake
-news has become a major concern for being destructive sometimes spreading confusion and deliberate disinformation among the people.
 
-The Aims of this projects is to use the Natural Language Processing and Machine learning  to detect the Fake news based on the text content of the Article.And after building the suitable Machine learning model to detect the fake/true news then to deploye it into a web interface using python_Flask.
+## **Project Summary**
+Fake news spreads misinformation rapidly, causing confusion and harm.  
+This project leverages **Natural Language Processing (NLP)** and **Machine Learning (ML)** to detect whether a news article is **True** or **Fake**.  
+It supports large datasets (~61,000+ records) and is deployed using **Flask** for easy web access.
 
-## **Prerequisites**
 ---
-### Things you need to install 
-1. Python 3.9
-     * This setup requires that your machine has python 3.9 installed on it. you can refer to this url https://www.python.org/downloads/ to download python. Once you have python downloaded and installed, you will need to setup PATH variables (if you want to run python program directly, detail instructions are below in how to run software section). To do that check this: https://www.pythoncentral.io/add-python-to-path-python-is-not-recognized-as-an-internal-or-external-command/.
-2. You will also need to download and install the required packages after you install python 
-     * Sklearn (scikit-learn)
-     * numpy
-     * Pandas
-     * matplotlib
-     * seaborn 
-     * NLTK
-     * Joblib
-     * flask 
-3. To install the Packages
-```Language
-pip install -r requirments.txt
-```
-4. Or else use can download anaconda and use its anaconda prompt to run the commands. To install anaconda check this url https://www.anaconda.com/download/. most the Packages are preinstalled in the anaconda environment
 
-## **Dataset**
+## **Key Features**
+- Detects fake news using multiple ML classifiers  
+- Achieves **87%+ accuracy** with Logistic Regression  
+- Web interface for live predictions  
+- Clean and professional dataset preprocessing  
+- Ready for future improvement using deep learning models  
+
 ---
-All of the Dataset that used in this project are availabe in public Domain.Most of the Dataset are collected from Kaggle (https://www.kaggle.com/)
-different datsets contain  different column and different information like [title,text,subject,news_url,author]
-<<<<<<< HEAD
-### Sample View of Dataset 1  
-**Created By: Pavan Kumar M R**  
-![Dataset1](dt1.PNG)
 
+## **Tech Stack**
+- **Python 3.9**  
+- Libraries: `scikit-learn`, `numpy`, `pandas`, `matplotlib`, `seaborn`, `NLTK`, `Joblib`, `Flask`  
+- **Flask** for deployment  
+- GitHub for version control  
 
-### Sample View of Dataset 2  
+---
+
+## **Dataset Overview**
+All datasets used are publicly available and contain columns like `title`, `text`, `subject`, `news_url`.  
+
+### Sample Dataset Previews
+![Dataset1](dt1.PNG)  
 ![Dataset2](dt2.PNG)  
+![Dataset3](dt3.PNG)  
+![Dataset4](dt4.PNG)  
+![Dataset5](dt5.PNG)  
 
-
-
-### Sample View of Dataset 3  
-![Dataset3](dt3.PNG)
-
-
-
-### Sample View of Dataset 4  
-**Created By: Pavan Kumar M R**  
-![Dataset4](dt4.PNG)
-
-![Dataset5](dt5.PNG)
-### Sample View of Dataset 5  
-  
-![Dataset5](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt5.PNG)
-=======
-* _sample view of Dataset1_![Dataset1](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt1.PNG)
-* _sample view of Dataset2_![Dataset2](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt2.PNG)
-* _sample view of Dataset3_![Dataset3](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt3.PNG)
-* _sample view of Dataset4_![Dataset4](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt4.PNG)
-* _sample view of Dataset5_![Dataset5](https://github.com/pavankumar0348/Fake_news_Detection/blob/main/dt5.PNG)
->>>>>>> b93159e (Add dataset images with Pavankumar0348)
-
-For model Build need only text and Label,The final dataset will contain only 2 column ['Article','Lable']
-  * For text we will create a news column named 'Article' which is the Combination Header and text
-  * In the Lable column 
-      * 1 replaset true
-      * 0 replasent fake
-
-## **Data preprocessing**
 ---
-1. Remove all unwanted columns.
-2. Remove All Missing Values Records.
-3. Removing all the extra information like brackets, any kind of puctuations - commas, apostrophes, quotes, question marks from Text.
-4. Remove all the numeric text, urls from Text.
 
-## **ML model Traning and Building**
+## **Data Preparation**
+- Remove unwanted columns  
+- Remove missing values  
+- Clean text: remove punctuation, brackets, numbers, URLs  
+- Prepare text for ML model input  
+
 ---
-Here we have build all the classifiers for predicting the fake news detection. The extracted features are fed into different classifiers. We have used Logistic Regression,  Stochastic gradient descent,Random forest, GBC, xgboost, DecisionTree, Multinomial Naive Baye and Bernoulli Naive Baye  classifiers . Each of the extracted features were used in all of the classifiers. Once fitting the model, we compared the accuracy score and checked the confusion matrix.
 
-![accuracy score]![accuracy score](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/download%20(4).png)
+## **Machine Learning Workflow**
+### Models Trained
+- Logistic Regression ✅ (Best Performing)  
+- Random Forest  
+- Gradient Boosting Classifier (GBC)  
+- XGBoost  
+- Decision Tree  
+- Multinomial Naive Bayes  
+- Bernoulli Naive Bayes  
+- Stochastic Gradient Descent  
 
-_The highest accuracy score we are getting is 87.04 but don't worry the model was trained with 61,000+ recored it will perform well_
-Our finally selected and best performing classifier was Logistic Regression which was then saved on disk with name model.plk . Once you clone this repository, this model will be copied to your machine and will be used for prediction. It takes an news article as input from user then shown to user whether it is true or Fake.
-model.plk is used to deploy the model usinf Flask.
+### Model Accuracy
+![Accuracy Score](accuracy_score.PNG)  
 
-#### Below is the Process Flow of the Model Building:
-![modelbuildingm]![modelbuildingm](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/Modelbulding11.PNG)
+**Observation:** Logistic Regression gave the **highest accuracy** (~87%).  
+Saved as `model.pkl` for deployment.
 
+#### Model Building Flowchart
+![Model Building](modelbuildingm.PNG)
 
-
-## **ML model Deployment**
 ---
-For Deploying we need to create a sample web interface which will get the text from the user and then send it to the flask server.In the flask server we will use the saved model model.plk to predict the news is real or fake and then return the result to the user through web interface.
- Example 1
-![result1](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/1.PNG)
 
- Example 2 
- ![result2](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/2.PNG)
+## **Deployment**
+The ML model is deployed using **Flask**:
 
+1. Web interface collects text input from users.  
+2. Input is sent to Flask backend.  
+3. `model.pkl` predicts whether the news is True or Fake.  
+4. Result is displayed instantly in the browser.
 
-#### Below is the Process Flow of the Model Deployment:
-![model deployment]![model deployment](https://raw.githubusercontent.com/pavankumar0348/Fake_news_Detection/main/dep.PNG)
+### Example Results
+**Example 1**  
+![Result1](1.PNG)  
 
+**Example 2**  
+![Result2](2.PNG)  
 
-## **Next steps**
+#### Deployment Flowchart
+![Model Deployment](model_deployment.PNG)
+
 ---
-As we can see that our best performing models had an 87.04 accuracy score. This is due to the text are still containing stopwords and wordnet and for classification we used all the defult parameters and we didn't try the Deep Learning based classification.al thou 87.04 % accuracy with 61,000+ training dataset is not bad We will extend this project to implement these techniques in future to increase the accuracy and performance of our models.
 
-## **Steps to Run this software**
----
-1. The first step would be to clone this repo in a folder in your local machine. To do that you need to run following command in command prompt or in git bash
-```Language
-$ git clone  https://github.com/pavankumar0348/Fake_news_Detection.git
-```
-2.This will copy all the data source file, program files and model into your machine.
+## **Installation & Usage**
+1. **Clone the repository**:
 
-3.Then Open the app.py which is insise the 'Model deployment using Flask' folder/directory
-
-4.After you change the folder/directory link run app.py by using IDLE(defult python Editer) or open the command prompt in the same directory and run the folloing code
-```Language
-$ python app.py
-```
-5.Then in Your web browser type this link http:localhost:5000/.
-
-6.Then Enter the Text in  Text box you want to check and click on submit.
-
-7.Program will take user input text and will be used by model to classify in one of categories of "True" and "False". 
-
-8.Then the Flask server will return the result to your browser.
-
-
+```bash
+git clone https://github.com/pavankumar0348/Fake_News_Detection.git
