@@ -33,24 +33,24 @@ different datsets contain  different column and different information like [titl
 <<<<<<< HEAD
 ### Sample View of Dataset 1  
 **Created By: Pavan Kumar M R**  
-![Dataset1](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt1.PNG)
+![Dataset1](dt1.PNG)
 
 
 ### Sample View of Dataset 2  
-  
-![Dataset2](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt2.PNG)
+![Dataset2](dt2.PNG)  
+
 
 
 ### Sample View of Dataset 3  
+![Dataset3](dt3.PNG)
 
-![Dataset3](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt3.PNG)
 
 
 ### Sample View of Dataset 4  
 **Created By: Pavan Kumar M R**  
-![Dataset4](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt4.PNG)
+![Dataset4](dt4.PNG)
 
-
+![Dataset5](dt5.PNG)
 ### Sample View of Dataset 5  
   
 ![Dataset5](https://raw.githubusercontent.com/pavankumar0348/Fake_News_Detection/main/Fake_news_Detection-main/dt5.PNG)
